@@ -74,3 +74,30 @@ while n > 0:
     n //= 10
 print(sum)
 ```
+
+## Управляющая конструкция while else
+> Блок `else` выполняется, когда основное тело цикла перестает работать самостоятельно (без использования `break`).
+```python
+i = 0
+
+while i < 5:
+    i += 1
+else:
+    print("хватит")
+print(i)
+```
+
+> Вместо `break` используем *метод флажка*.
+```python
+n = int(input())
+flag = True
+i = 2
+while flag:
+    if n % 10 == 0:
+        flag = False
+        print(i)
+    elif i > n // 2:
+        print(n)
+        flag = False
+    i += 1     
+```
