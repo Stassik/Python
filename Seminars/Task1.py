@@ -12,4 +12,15 @@ Output:
 
 n = int(input("Введите n"))
 m = int(input("Введите m"))
+
+"""
+#Решение 1
 print(m//n + (m % n != 0))
+"""
+
+#Решение 2
+def arg(n, m):
+    return (m+n-1)//n
+
+res = arg (n, m)
+print(res)
