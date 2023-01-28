@@ -11,3 +11,13 @@
 Input: 20 21 22(ввод чисел НЕ в одну строку)
 Output: 32"""
 
+first_class = int(input("Введите количество учеников в 1 классе: "))
+second_class = int(input("Введите количество учеников в 2 классе: "))
+third_class = int(input("Введите количество учеников в 2 классе: "))
+
+def calc(first, second, third):
+    total = (first + 1)//2 + (second +1)//2 + (third + 1)//2
+    return total
+
+total_desk = calc(first_class, second_class, third_class)
+print(total_desk)
