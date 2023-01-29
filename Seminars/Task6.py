@@ -15,14 +15,14 @@ len_ticket = int(input("Введите количество цифр в номе
 
 def get_ticket_numbers(length):
     ticket_num = []
-    for i in range(0, length):
+    i = 0
+    while i < length:
         num = int(input(f"Введите цифру {i+1} в номере билета: "))
         if num >= 0 and num < 10:
             ticket_num.append(num)
+            i += 1
         else:
             print("Введите положительные числа от 0 до 9")
-            break
-
     return ticket_num
 
 
@@ -30,16 +30,13 @@ def find_sum1(ticket_num):
     sum1 = 0
     for i in range(0, len(ticket_num)//2):
         sum1 += ticket_num[i]
-        print(sum1)
     return sum1
 
 
 def find_sum2(ticket_num):
     sum2 = 0
-    for i in range(-len(ticket_num)//2, 0):
+    for i in range((-len(ticket_num)+1)//2, 0):
         sum2 += ticket_num[i]
-        print(sum2)
-
     return sum2
 
 
@@ -55,4 +52,5 @@ print(ticket_number)
 
 sum1_number = find_sum1(ticket_number)
 sum2_number = find_sum2(ticket_number)
+
 check_the_ticket(sum1_number, sum2_number)
