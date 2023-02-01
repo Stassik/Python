@@ -16,7 +16,7 @@ def calc_sum(num):
     return sum
 
 
-if number > 999 or number < 100:
+if not 100 < number < 999:
     print("Вы ввели не трехзначное число.")
 else:
     total = calc_sum(number)
