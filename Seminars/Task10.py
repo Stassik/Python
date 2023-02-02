@@ -11,15 +11,15 @@
 """
 import random
 n = random.randint(1, 10) #Количество монеток
-print(n)
-count0 = 0
-count1 = 0
+print(f"Всего монет - {n}")
+count0 = 0 #орел
+count1 = 0 #решка
 for i in range(0, n):
     num = random.randint(0,1)
     print(num, end=" ")
     if num == 0:
         count0 +=1
-    elif num == 1:
+    else:
         count1 +=1
 if count0 > count1:
     print(f"\n{count1}")
