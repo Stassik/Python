@@ -5,3 +5,18 @@
 
 10 -> 1 2 4 8
 """
+
+n = int(input("Введите число: "))
+while n <= 0:
+    n = int(input("Введите натуральное число: "))
+
+i = 0
+num = 1
+while num <= n:
+    num = 2**i
+    if num > n:
+        break
+    else:
+        print(num, end=" ")
+        i += 1
+    
