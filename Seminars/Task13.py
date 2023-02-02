@@ -25,5 +25,17 @@ list_day = []
 
 for i in range(n):
     list_day.append(random.randint(-50, 50))
-
 print(list_day)
+
+count_temp = 0
+count_max = 0
+
+for i in range(0, n):
+    if list_day[i] > 0:
+        count_temp += 1
+    else:
+        if count_temp > count_max:
+            count_max = count_temp
+        count_temp = 0
+
+print(count_max)
