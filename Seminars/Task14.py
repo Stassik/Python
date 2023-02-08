@@ -14,9 +14,6 @@ i = 0
 num = 1
 while num <= n:
     num = 2**i
-    if num > n:
-        break
-    else:
-        print(num, end=" ")
-        i += 1
+    print(num, end=" ")
+    i += 1
     
