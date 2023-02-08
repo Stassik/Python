@@ -184,6 +184,8 @@ i = a.intersection(b)   #i = {2, 5, 8}
 d1 = a.difference(b)    # d1 = {1, 3}
 d2 = b.difference(a)    # d2 = {13, 21}
 
+set()   #Фуекция преобразует списки в множества
+
 q = a.union(b).difference(a.intersection(b)) #q = {1, 3, 13, 21}
 
 f = frozenset(a)    #Создание замороженного множества
