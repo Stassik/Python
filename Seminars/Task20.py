@@ -35,9 +35,9 @@ ru = {'А': 1, 'В': 1, 'Е': 1, 'И': 1, 'Н': 1, 'О': 1, 'Р': 1, 'С': 1, '�
 
 leng = input("Введите язык (en или ru): ").lower()
 
-"""while (leng !='en') or (leng !='ru'):
+while (leng !='en') or (leng !='ru'):
    leng = input("Введите язык (en или ru): ").lower() 
-"""
+
 word = input("Введите слово: ").upper()
 
 if leng=='en':
