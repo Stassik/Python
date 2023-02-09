@@ -35,14 +35,13 @@ ru = {'А': 1, 'В': 1, 'Е': 1, 'И': 1, 'Н': 1, 'О': 1, 'Р': 1, 'С': 1, '�
 
 leng = input("Введите язык (en или ru): ").lower()
 
-while (leng !='en') or (leng !='ru'):
-   leng = input("Введите язык (en или ru): ").lower() 
-
-word = input("Введите слово: ").upper()
-
-if leng=='en':
-    total_sum = counter_word(word, en)
-elif leng =='ru':     
-    total_sum = counter_word(word, ru)         
-
-print(total_sum)
+if (leng =='en') or (leng =='ru'):
+    word = input("Введите слово: ").upper()
+    if leng=='en':
+        total_sum = counter_word(word, en)
+    elif leng =='ru':     
+        total_sum = counter_word(word, ru)
+    print(total_sum)    
+else:
+      leng = input("Введите язык (en или ru): ").lower() 
+        
