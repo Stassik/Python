@@ -16,3 +16,5 @@ print(f"Массив: {my_list}")
 
 count = len([1 for i in range(n) if my_list[i] == x])
 print(count)
+temp = my_list.count(x) #метод count
+print(temp)
