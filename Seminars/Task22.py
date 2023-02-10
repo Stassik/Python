@@ -12,8 +12,8 @@ n - кол-во элементов первого множества. m - кол
 n = int(input("Введите количество элементов первого множества: "))
 m = int(input("Введите количество элементов второго множества: "))
 
-set_1 = {int(input(f"Введите {i+1} число: ")) for i in range(0, n)}
-set_2 = {int(input(f"Введите {i+1} число: ")) for i in range(0, n)}
+set_1 = {int(input(f"Введите {i+1} число 1 множества: ")) for i in range(0, n)}
+set_2 = {int(input(f"Введите {i+1} число 2  множества: ")) for i in range(0, n)}
 rep = sorted(set_1.intersection(set_2))
 
 print(set_1)
