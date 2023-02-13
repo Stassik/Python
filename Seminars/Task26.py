@@ -7,6 +7,8 @@ A = 2; B = 3 -> 8
 """
 
 def raise_to_degree(x, y, total=1 ):
+    if y==1:
+        return x
     if total >= x**y:
         return total
     total *= x
