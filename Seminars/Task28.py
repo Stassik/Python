@@ -11,7 +11,6 @@ def rec_sum(x, y, total=0):
             x -=1
         else:
             y -= 1
-        print(total)
         return rec_sum(x, y, total)
     return total            
 
