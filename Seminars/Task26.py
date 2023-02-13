@@ -6,3 +6,13 @@ A = 3; B = 5 -> 243 (3⁵)
 A = 2; B = 3 -> 8
 """
 
+def raise_to_degree(x, y, total=1 ):
+    if total >= x**y:
+        return total
+    total *= x
+    return raise_to_degree(x, y, total)
+
+num = int(input("Введите число: "))
+deg = int(input("Введите степень: "))
+total = raise_to_degree(num, deg)
+print(total)
