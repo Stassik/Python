@@ -11,7 +11,7 @@ def fill_list(x):
         x_list.append(int(input(f"Введите {i+1} число: ")))
     return x_list
 
-def count_num(x_list):
+"""def count_num(x_list):
     count = 0
     for i in range(len(x_list)-1):   
         if x_list[i]==x_list[i+1]:
@@ -22,4 +22,17 @@ n = int(input("Введите длину массива: "))
 n_list = sorted(fill_list(n))
 total = count_num(n_list)
 print(n_list)
-print(total)
+print(total)"""
+
+
+
+n = int(input("Введите длину массива: "))
+arr=fill_list(n)
+result=0
+for i in range(n-1):
+    for j in range(i+1,n):
+        if arr[i]==arr[j]:
+            result+=1
+
+print(f'{arr} \n'
+f'Кол-во парных элементов списка = {result}')
