@@ -13,14 +13,13 @@ def fill_list(x):
 
 def count_num(x_list):
     count = 0
-    for i in range(len(x_list)-1):
-        num = x_list.pop(0)   
-        if num not in x_list:
+    for i in range(len(x_list)-1):   
+        if x_list[i]==x_list[i+1]:
             count += 1
     return count
 
 n = int(input("Введите длину массива: "))
-n_list = fill_list(n)
+n_list = sorted(fill_list(n))
 total = count_num(n_list)
 print(n_list)
 print(total)
