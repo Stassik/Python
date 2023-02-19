@@ -22,8 +22,4 @@ transformation = lambda x: x
 transormed_values = list(map(transformation, values))
 print(transormed_values)
 
-if transormed_values == values:
-    print("ОК")
-
-else:
-    print("False")
+print('ok' if transormed_values==values else False)
