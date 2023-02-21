@@ -20,4 +20,14 @@ print_operation_table(lambda x, y: x * y)
 6 12 18 24 30 36
 """
 
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    list_columns = [i+1 for i in range(0, num_columns)]
+    list_rows = [i+1 for i in range(0, num_rows)]
+
+    for j in list_rows:
+        new_list_row = list()
+        for i in list_columns:
+            new_list_row.insert(i, i*j)
+        print(new_list_row)
+print_operation_table(lambda x, y: x * y)
 
