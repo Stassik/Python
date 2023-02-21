@@ -19,3 +19,19 @@
 имеющий такую площадь. 
 Гарантируется, что самая далекая планета ровно одна
 '''
+from math import pi
+
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+
+orbits = [i for i in orbits if i[0] != i[1]]
+print(orbits)
+max_square = max([pi*i[0]*i[1] for i in orbits])
+print(max_square)
+
+max_square_a_b = [(i[0], i[1]) for i in orbits if pi*i[0]*i[1] == max_square]
+print(max_square_a_b)
+
+"""
+maximum = max(list(map(lambda x:pi*x[0]*x[1] ,(filter(lambda i: i[0]!=i[1], orbits)))))
+far = filter(lambda y:pi*y[0]*y[1] == maximum, orbits)
+print(*list(far))"""
