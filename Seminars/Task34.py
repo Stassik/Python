@@ -16,3 +16,29 @@
 Вывод:
 Парам пам-пам
 """
+vowel_letters = ['а', 'у', 'о', 'ы', 'э', 'е', 'ё', 'и', 'ю', 'я']
+words_list = input("Введите фразу: ").split()
+print(words_list)
+count_list = set()
+for i in range(0, len(words_list)):
+    letters_list = list()
+    word = words_list[i]
+    count = 0
+
+    for j in range(0, len(word)): #Разбиваем слово на буквы
+        letters_list.append(word[j])
+
+        for k in vowel_letters: # Считаем сколько в слове гласных букв (слогов)
+            if k == word[j]:
+                count += 1
+    count_list.add(count)    
+print(count_list)
+if len(count_list) == 1:
+    print("Парам пам-пам")
+else:
+    print("Пам парам")    
+     
+    
+         
+
+    
