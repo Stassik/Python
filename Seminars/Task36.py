@@ -28,6 +28,6 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
         new_list_row = list()
         for i in list_columns:
             new_list_row.insert(i, operation(j, i))
-        print(new_list_row)
+        print(*new_list_row)
 print_operation_table(lambda x, y: x * y)
 
