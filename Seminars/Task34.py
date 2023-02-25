@@ -32,7 +32,7 @@ for i in range(0, len(words_list)):
             if k == word[j]:
                 count += 1
     count_list.add(count)    
-print(count_list)
+print(*count_list)
 
 if len(count_list) == 1:
     print("Парам пам-пам")
